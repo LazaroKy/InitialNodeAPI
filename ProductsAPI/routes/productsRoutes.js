@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const Product = require('../model/product');
-const res = require('express/lib/response');
 
 router.get('/', (req, res) =>{
     res.json(Product.listAllProducts);
@@ -32,4 +31,4 @@ router.delete('/id', (req, res)=> {
     res.json({ message: 'Deleted product successfully'});
 });
 
-module.exports = Routes;
+module.exports = router;
