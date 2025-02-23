@@ -10,7 +10,7 @@ class Product {
     }
 
     static createProduct(product){
-        product.id = product.length + 1; //Id unique
+        product.id = products.length + 1; //Id unique
         products.push(product);
     }
 
