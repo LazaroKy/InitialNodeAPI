@@ -17,15 +17,17 @@ Access the path of the project
 
 - Fourth, run the application:  
 
+        npm install
         npm start
 
-- Fifth, test the API endpoints using Postman or any other API testing tool:    
-Open Postman (or a similar tool).  
-Make requests to server `http://localhost:3000/api/products`, using the appropriate methods (GET, POST, PUT, DELETE) to test each endpoint (for example, adding a product, retrieving a product, updating, or deleting). 
+- Fifth, test the API endpoints using Postman:  
+\
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/39006660-0da559e5-20b6-47c6-8c30-d87fbdd603b9?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D39006660-0da559e5-20b6-47c6-8c30-d87fbdd603b9%26entityType%3Dcollection%26workspaceId%3D9a654f0b-9cd6-41ed-b648-635d9245c62c)  
+\
+Make requests to server `http://localhost:3000/api/products`, using the appropriate methods (GET, POST, PUT, DELETE) to test each endpoint (for example, adding a product, retrieving a product, updating, or deleting).   
 
-
----
-## To Create a Project Like This:
+---  
+### To Create a Project Like This:
 
 1. Create a Project Directory:
 
@@ -38,7 +40,7 @@ Make requests to server `http://localhost:3000/api/products`, using the appropri
 
     Run the following command to initialize a new project and generate a `package.json` file:
 
-    npm init -y
+        npm init -y
 
     This will automatically create the `package.json` file without any prompts.
 
@@ -52,7 +54,7 @@ Make requests to server `http://localhost:3000/api/products`, using the appropri
 
         mkdir src
 
-5. Create the main server file (e.g., `app.js` or `server.js`):
+5. Create the main server file `app.js` or `server.js`:
 
     Inside the `src` folder, create the main file that will run your server. You can name it `app.js` or `server.js` (or any name you prefer).
 
@@ -77,3 +79,15 @@ Make requests to server `http://localhost:3000/api/products`, using the appropri
         node src/app.js
 
 10. Test your API by running the server and using Postman or a similar tool to make requests to your local server.
+
+---
+
+### Requirements to run the project:
+
+#### Install node  
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js Logo" width="90" height="70">   
+
+#### Install Git  
+
+<img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo" width="80" height="80"/>
