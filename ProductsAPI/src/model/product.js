@@ -2,11 +2,12 @@ const products = []; // Array to simulate database
 
 class Product {
     static listAllProducts(){
-        return products;
+        return products;  
     }
 
     static getProductById(id){
-        return products.find(product=> product.id = id);
+        console.log(id);
+        return products.find(product => product.id == id);
     }
 
     static createProduct(product){
@@ -15,16 +16,16 @@ class Product {
     }
 
     static updateProduct(id, updateDatas){
-        const index = products.findIndex(product=> product.id === id);
+        const index = products.findIndex(product => product.id == id);
         if(index !== -1){
             products[index] = {...products[index], ...updateDatas} //mirroring operator - overwriting properties of the product chosen
         }
     }
 
     static deleteProduct(id){
-        const index = products.findIndex(product=> product.id === id);
+        const index = products.findIndex(product => product.id == id);
         if(index !== -1){
-            products.slice(index, 1) // "slice" - doesn't change the source array 
+            products.splice(index, 1) // "slice" - doesn't change the source array 
         }
     }
 }
